@@ -1,0 +1,121 @@
+{
+  "projectType": "api-service",
+  "projectName": "LLM Gateway",
+  "projectDescription": "An open-source API gateway for routing, managing, and analyzing LLM requests across multiple providers with a unified interface.",
+  "theme": "aspen",
+  "primaryColor": "#6366f1",
+  "lightColor": "#818cf8",
+  "darkColor": "#4f46e5",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["introduction", "quickstart", "authentication"]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/providers",
+              "concepts/routing",
+              "concepts/caching",
+              "concepts/analytics"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/api-keys",
+              "features/cost-breakdown",
+              "features/guardrails",
+              "features/metadata",
+              "features/image-generation",
+              "features/reasoning",
+              "features/response-healing",
+              "features/web-search",
+              "features/vision",
+              "features/anthropic-endpoint",
+              "features/data-retention",
+              "features/audit-logs"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/openai-sdk",
+              "integrations/vercel-ai-sdk",
+              "integrations/langchain",
+              "integrations/custom-providers",
+              "integrations/aws-bedrock",
+              "integrations/azure"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/self-hosting",
+              "guides/mcp",
+              "guides/cursor",
+              "guides/cline",
+              "guides/cli"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/rate-limits",
+              "resources/troubleshooting",
+              "resources/faq"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api-reference/health",
+              "api-reference/chat-completions",
+              "api-reference/messages",
+              "api-reference/models",
+              "api-reference/images"
+            ]
+          },
+          {
+            "group": "Schemas",
+            "pages": [
+              "api-reference/schemas/chat-request",
+              "api-reference/schemas/chat-response",
+              "api-reference/schemas/model",
+              "api-reference/schemas/errors"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-provider LLM routing with OpenAI-compatible API",
+    "Real-time usage tracking and cost analytics",
+    "Response caching with Redis for improved performance",
+    "Guardrails for content filtering and safety",
+    "Web search and tool calling capabilities",
+    "Image generation and vision support",
+    "Self-hosting with Docker deployment",
+    "API key management and rate limiting",
+    "Anthropic and OpenAI endpoint compatibility",
+    "MCP (Model Context Protocol) support"
+  ],
+  "publicApiSurface": [
+    "POST /v1/chat/completions - Chat completion with streaming support",
+    "POST /v1/messages - Anthropic-compatible messages endpoint",
+    "GET /v1/models - List available models",
+    "POST /v1/images/generations - Generate images",
+    "GET /health - Health check endpoint",
+    "GET /metrics - Prometheus metrics"
+  ]
+}
